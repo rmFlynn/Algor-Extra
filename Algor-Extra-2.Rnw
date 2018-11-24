@@ -44,6 +44,7 @@
 
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 <<setup, include=FALSE>>=
 library(knitr)
 #options (replace.assign = tRUE)
@@ -104,6 +105,19 @@ g <- make_empty_graph(directed=F ) +
 \frame{\frametitle{Part b}
     If $G$ is a graph with $n$ vertices, prove that $\alpha(G) = \alpha(G[r_1 , r_2, ... , r_n])$, where each $r_i \in N$.
     \begin{proof}
+    
+$\alpha (G)$ can be weird as the sum of independence number of the sub graphs of (G) 
+
+Each vertex in the largest independent set of G obviously only adds one to $\alpha (G)$
+
+Recall that each $r_i$ replaces a original point in (G) and forms a complete graph with its adjacent vertices.
+
+The maximum independence number of the complete graph created by the replacement of the vertices with the $r_i$ is one.
+
+Therefore the subgraph will contribute the same value to $\alpha(G[r_1 , r_2, ... , r_n])$ as the original point contributed to $\alpha (G)$ which is 1.
+
+
+Thus $\alpha(G) = \alpha(G[r_1 , r_2, ... , r_n])$
 
     \end{proof}
 
