@@ -86,3 +86,4 @@ High contrast of black-white is not advisable for presenting with high quality p
 
 ##### Do I need to download the fonts?
 No, the fonts are already present in the fonts/ subfolder. The corresponding licenses can be found in LICENSE/ subfolder.
+Im connected and in Sync
